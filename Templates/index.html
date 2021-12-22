@@ -1,0 +1,35 @@
+<html>
+        {% load static %}
+        
+        <head>
+        <link rel="stylesheet" id="wp-block-library-css" href="{% static 'block.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" id="bootstrap-css" href="https://www.claudiatenhoope.com/wp-content/themes/ClaudiaTenHoopev1/css/bootstrap.min.css?ver=3.3.6" type="text/css" media="all">
+        <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.5.3" type="text/css" media="all">
+        <link rel="stylesheet" id="style-name-css" href="{% static 'style-name-css.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" id="OpenSans-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400&amp;ver=5.5.3" type="text/css" media="all">
+        <style>
+                html{scroll-behavior: smooth}
+                </style>
+        </head>
+      
+        <body>
+                
+                {% include "header.html" %}
+                {% include "skills.html" %}
+                <div class="row" style="background-color: #c4d6e2">
+						<div class="col-xs-12 col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2 about" id="about-me">
+							<div class="col-xs-12 subtitle"><h2>About me</h2></div>
+							<div class="col-xs-12 col-sm-9 content"><p style="font-family: Helvetica">Hi, my name is An Vu - <strong> a post-grad student from Victoria University of Wellington (VUW),</strong> New Zealand. I have worked as a business analysist for three years and started working as data analysist for one recent year during my study at VUW. I hold a Master's degree in International Business Management (University of Westminster, the UK) and a PhD degree in Information system (VUW). </p>
+
+<p style="font-family: Helvetica"> During the time working as a business analysist as well as a post-grad student at VUW, I have sharpened my data analysing skills with different types of projects (e.g., survey data on individual opinions on online recommendation systems; or business consulting project with Pizza Pomodoro - the best pizza of Wellington 2018; 2021). I am trained and highly experienced in questionnaire design and can work efficiently with Qualtrics in data collection.</p>
+
+<p style="font-family: Helvetica">If you are insterested in my work, please reach out to me by email or via the section below </p>
+<p><img loading="lazy" class="alignnone wp-image-428" src="{% static 'signature.png' %}" alt="AN VU handwritten" width="200" height="40"></p>
+</div>
+							<img src="{% static 'profilepic.jpg' %}" alt="Profile picture AN VU" class="col-xs-12 col-sm-3">
+						</div>
+					</div>
+{% include "portfolio.html" %}
+{% include "contact.html" %} 
+{% include "footer.html" %} 
+        </body>
