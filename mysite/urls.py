@@ -18,10 +18,12 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from . import views
+from contact import views as contact_views
 
 urlpatterns = [
     path('',views.index),
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
+    path('contact/', contact_views.contact_view, name = 'contact'),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
